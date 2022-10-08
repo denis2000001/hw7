@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+{% block personal %}
+    <h1>
+    username: {{ user.username }}
+    <br>
+    first_name: {{ user.first_name }}
+    <br>
+    last_name: {{ user.last_name }}
+    <br>
+{#    password: {{ user.password }}#}
+    </h1>
+{% endblock %}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+</head>
+<body>
+    <form action="/users/{{ id }}/change_password/" method="post">
+        {% csrf_token %}
+        {{ pers.as_p }}
+        <input type="submit" value="Change Password">
+    </form>
+{#    <div>#}
+{#        {% for i in  %}#}
+{#    </div>#}
+</body>
+</html>
